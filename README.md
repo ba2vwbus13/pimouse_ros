@@ -1,3 +1,0 @@
-# pimouse_ros
-
-test
