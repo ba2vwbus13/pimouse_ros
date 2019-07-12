@@ -9,7 +9,7 @@ pip install rospkg
 #ros install
 cd ..
 git clone https://github.com/ryuichiueda/ros_setup_scritps_Ubuntu14.04_server.git
-cd ./ros__setup_scritps_Ubuntu14.04_server
+cd ./ros_setup_scritps_Ubuntu14.04_server
 bash ./step0.bash
 bash ./step1.bash
 
@@ -20,4 +20,3 @@ source /opt/ros/indigo/setup.bash
 catkin_init_workspace
 cd ~/catkin_ws
 catkin_make
-
