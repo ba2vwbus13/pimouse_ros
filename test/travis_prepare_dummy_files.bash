@@ -1,4 +1,4 @@
-:#!/bin/bash -xve
+#!/bin/bash -xve
 #sudo touch /dev/rt{buzzer, motor, moteren, motor_raw_{l,r}}0
 #sudo chmod 666 /dev/rt{buzzer, motor, moteren, motor_raw_{l,r}}0
 sudo touch /dev/rtbuzzer0
