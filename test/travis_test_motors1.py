@@ -16,7 +16,7 @@ class MotorTest(unittest.TestCase):
 		self.assertIn('/motors', nodes, "node does not exist")
 
 	def test_put_freq(self):
-		pub = rospy.Publisher('/motor_raw', MortorFreqs)
+		pub = rospy.Publisher('/motor_raw', MotorFreqs)
 		m = MotorFreqs()
 		m.left_hz = 123
 		m.right_hz = 456
