@@ -48,7 +48,7 @@ class Motor():
 		self.last_time = rospy.Time.now()
 
 if __name__ == '__main__':
-	rospy.init_node('mortors')
+	rospy.init_node('motors')
 	m = Motor()
 
 	rate = rospy.Rate(10)
