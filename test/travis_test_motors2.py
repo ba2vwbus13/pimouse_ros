@@ -28,7 +28,7 @@ class MotorTest(unittest.TestCase):
 		self.assertEqual(ret.message, "ON", "motor on wrong message")
 		with open("/dev/rtmotoren0", "r") as f:
 			data = f.readline()
-			self.assrtEqual(data, "1\n", "wrong value in rtmotor0 at motor on")
+			self.assertEqual(data, "1\n", "wrong value in rtmotor0 at motor on")
 
 	def file_check(self, dev, value, message):
 		with open("/dev/" + dev, "r") as f:
