@@ -25,7 +25,7 @@ class BuzzerTest(unittest.TestCase):
 		self.client.send_goal(goal, feedback_cb = self.feedback_cb)
 		self.client.wait_for_result(rospy.Duration.from_sec(0.5))
 		self.assertFalse(self.client.get_result(), "stop is requested but return true")
-		self.assertFalse(self.freqs == self.device_values, "not stopped")
+		self.assertFalse(goal.freqs == self.device_values, "not stopped")
 		
 	def feedback_cb(self,feedback):
 		with open("/dev/rtbuzzer0", "r") as f:
